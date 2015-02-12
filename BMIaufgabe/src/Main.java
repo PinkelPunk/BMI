@@ -8,11 +8,11 @@ public class Main
 		// BMI= körpergewicht(in kg)/körpergrösse(in meter) zum quadrat
 		int kilo=70;
 		double groesse=1.85;
-		int bmi;
+		double bmi;
 		
-		bmi=(int)kilo/((int)groesse*(int)groesse);
+		bmi=kilo/(groesse*groesse);
 		
-		System.out.println("BMI = " + bmi);
+		System.out.println("BMI = " + (int)bmi);
 		
 	}
 
