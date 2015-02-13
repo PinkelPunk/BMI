@@ -28,6 +28,10 @@ public class BmiRechner
 			{
 				System.exit(0);
 			}
+			else
+			{
+				System.out.println("Falsche Eingabe. Bitte erneut versuchen: \n");
+			}
 		} while(!rechnen.equalsIgnoreCase("ja")||!rechnen.equalsIgnoreCase("nein"));
 		
 	}
