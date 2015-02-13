@@ -7,7 +7,7 @@ import bmi.BmiRechner;
 public class TestBmiRechner extends TestCase
 {
 	@Test
-	public void testGetGewicht_C1()
+	public void testGetGewicht_C2()
 	{
 		BmiRechner bmi=new BmiRechner();
 		
@@ -36,4 +36,5 @@ public class TestBmiRechner extends TestCase
 		
 		assertEquals(30, bmi.getGewicht());
 	}
+	
 }
