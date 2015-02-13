@@ -14,6 +14,11 @@ public class BmiRechner
 	
 	public BmiRechner()
 	{
+		programmAusfuehrung();
+	}
+	
+	public void programmAusfuehrung()
+	{
 		do
 		{
 			Scanner scan=new Scanner(System.in);
@@ -33,7 +38,6 @@ public class BmiRechner
 				System.out.println("Falsche Eingabe. Bitte erneut versuchen: \n");
 			}
 		} while(!rechnen.equalsIgnoreCase("ja")||!rechnen.equalsIgnoreCase("nein"));
-		
 	}
 	
 	public double getKilo()
