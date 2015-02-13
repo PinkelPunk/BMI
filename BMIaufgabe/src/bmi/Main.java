@@ -7,7 +7,6 @@ public class Main
 	{
 		
 		BmiRechner bmi=new BmiRechner();
-		
 	}
 
 }
