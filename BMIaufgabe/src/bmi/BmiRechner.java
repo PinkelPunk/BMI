@@ -42,17 +42,23 @@ public class BmiRechner
 	
 	public double getKilo()
 	{
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Wieviel wiegst du in kg?");
-		kilo=scan.nextDouble();
+		do
+		{
+			Scanner scan=new Scanner(System.in);
+			System.out.println("Wieviel wiegst du in kg?");
+			kilo=scan.nextDouble();
+		} while(kilo<0||kilo>400);
 		return kilo;
 	}
 	
 	public double getGroesse()
 	{
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Wie gross bist du in meter?");
-		groesse=scan.nextDouble();
+		do
+		{
+			Scanner scan=new Scanner(System.in);
+			System.out.println("Wie gross bist du in meter?");
+			groesse=scan.nextDouble();
+		} while(groesse<1.20||groesse>2.50);
 		return groesse;
 	}
 	
