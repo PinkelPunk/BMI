@@ -22,5 +22,18 @@ public class TestBmiRechner extends TestCase
 		assertEquals(40, bmi.getGewicht());
 	}
 	
-	
+	public void testGetGewicht_Grenzwert()
+	{
+		BmiRechner bmi=new BmiRechner();
+		
+		assertEquals(16, bmi.getGewicht());
+		
+		assertEquals(18, bmi.getGewicht());
+		
+		assertEquals(24, bmi.getGewicht());
+		
+		assertEquals(25, bmi.getGewicht());
+		
+		assertEquals(30, bmi.getGewicht());
+	}
 }
