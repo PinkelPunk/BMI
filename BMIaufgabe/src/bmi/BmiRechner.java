@@ -19,6 +19,7 @@ public class BmiRechner
 	
 	public void programmAusfuehrung()
 	{
+		//start des BMI-Rechners mit überprüfung auf richtige eingaben + evtl. beendigung des programms
 		do
 		{
 			Scanner scan=new Scanner(System.in);
@@ -42,6 +43,7 @@ public class BmiRechner
 	
 	public double getKilo()
 	{
+		//eingabe des gewicht's in kilogramm
 		do
 		{
 			Scanner scan=new Scanner(System.in);
@@ -53,6 +55,7 @@ public class BmiRechner
 	
 	public double getGroesse()
 	{
+		//eingabe der grösse in meter
 		do
 		{
 			Scanner scan=new Scanner(System.in);
@@ -64,14 +67,20 @@ public class BmiRechner
 	
 	private void berechneBmi()
 	{
+		//aufrufen der methoden getKilo + getGroesse
 		getKilo();
 		getGroesse();
+		
+		//berechnung des BMI
 		bmi=kilo/(groesse*groesse);
+		
+		//ausgabe des ergebnisses
 		bmiAusgeben();
 	}
 	
 	public String getGewicht()
 	{
+		//einstufung des ergebnisses in die richtige kategorie
 		if((int)bmi<=16&&(int)bmi>=0)
 		{
 			gewicht="starkes Untergewicht.";
@@ -101,6 +110,7 @@ public class BmiRechner
 	
 	public void bmiAusgeben()
 	{
+		//ausgabe des ergebnisses in der richtigen kategorie
 		System.out.println("Dein BMI liegt bei " + (int)bmi + ".\nDu hast somit " + getGewicht() + "\n");
 	}
 }
